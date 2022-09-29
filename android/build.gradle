@@ -18,6 +18,7 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -36,8 +37,14 @@ android {
 }
 
 dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+//    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
+
+
     implementation "com.google.zxing:core:3.5.0"
     implementation "com.google.zxing:javase:3.5.0"
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+//    implementation 'cz.adaptech:tesseract4android:4.1.1'
+//    implementation 'org.jmrtd:jmrtd:0.7.18'
 }
